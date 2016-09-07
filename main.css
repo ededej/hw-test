@@ -1,0 +1,59 @@
+body{
+    background-color:whitesmoke;
+}
+
+header{
+    background-color:darksalmon;
+    height: 150px;
+
+}
+
+header h1{
+    color:black;
+    text-transform:uppercase;
+    text-align: left;
+    letter-spacing:0.5em;
+    font-family: "Comic Sans MS", Times, serif;
+}
+
+header h2{
+    color:black;
+    text-align: center;
+    letter-spacing:0.1em;
+    font-family: "Cambria Math", Times, serif;
+
+}
+#search{
+    text-align: center;
+    padding-top: 50px;
+}
+
+input[type=text] {
+    height: 60px;
+    width: 210px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('search_icon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 91%;
+}
+
+
+#underSearch{
+    text-align: center;
+    padding-top: 50px;
+}
+
+li{
+    display: block;
+}

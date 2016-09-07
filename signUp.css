@@ -1,0 +1,25 @@
+body{
+    background-color:whitesmoke;
+}
+
+header{
+    background-color:darksalmon;
+    height: 150px;
+
+}
+
+header h1{
+    color:black;
+    text-transform:uppercase;
+    text-align: left;
+    letter-spacing:0.5em;
+    font-family: "Comic Sans MS", Times, serif;
+}
+
+header h2{
+    color:black;
+    text-align: center;
+    letter-spacing:0.1em;
+    font-family: "Cambria Math", Times, serif;
+
+}
