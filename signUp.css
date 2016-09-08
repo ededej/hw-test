@@ -1,7 +1,9 @@
+/*Body css*/
 body{
     background-color:whitesmoke;
 }
 
+/*header css*/
 header{
     background-color:darksalmon;
     height: 150px;
@@ -9,16 +11,21 @@ header{
 }
 
 header h1{
+    margin:1% 2% 0% 20%  ;
     color:black;
+    font-size: 460%;
     text-transform:uppercase;
-    text-align: left;
+    text-align: center;
     letter-spacing:0.5em;
-    font-family: "Comic Sans MS", Times, serif;
+    font-family: Klee, Times, serif;
 }
 
 header h2{
+    margin-left:40%  ;
+    margin-top: 0%;
+    font-size: 200%;
     color:black;
-    text-align: center;
+    text-align:center;
     letter-spacing:0.1em;
     font-family: "Cambria Math", Times, serif;
 

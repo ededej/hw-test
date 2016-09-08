@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Lunchy</title>
+    <title>Pranzo</title>
     <link type="text/css" rel="stylesheet" href="main.css">
 
 </head>
@@ -18,14 +18,20 @@
 
 <!--Here I need the search bottom-->
     <div id="search">
-        Search : <input type="text" name="search" placeholder="Zipcode or adreess">
+       <p> Find Lunch : <input type="text" name="search" placeholder="Zipcode or adreess"> </p>
     </div>
 
 <!--Here I will put the Sing in or Registration links by using the table-->
     <div id="underSearch">
         <ul>
-            <li> Sign in</li>
-            <li><a href="signUp.html">Sign up for free </a></li>
+            <li id="signIn"> Sign in</li>
+            <li id="email"><label for="email">Email Address <input type = "email" placeholder="Insert email"/></label></li>
+            <li id="password"><label for="email">Password <input type = "email" placeholder="More than six characters"/></label></li>
+            <li id="submit"><form action="signIn.html">
+                <input type="submit" class="button"> </form></li>
+            <li id="singUp" ><a href="signUp.html">Sign up for free </a></li>
+            <li id="singUpResturant" ><a href=".html">Sign up for Resturant </a></li>
+            <li id ="about">About Us</li>
         </ul>
     </div>
 

@@ -1,7 +1,10 @@
+/*Body css*/
 body{
     background-color:whitesmoke;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
+/*header css*/
 header{
     background-color:darksalmon;
     height: 150px;
@@ -9,23 +12,31 @@ header{
 }
 
 header h1{
+    margin:1% 2% 0% 20%  ;
     color:black;
+    font-size: 460%;
     text-transform:uppercase;
-    text-align: left;
+    text-align: center;
     letter-spacing:0.5em;
-    font-family: "Comic Sans MS", Times, serif;
+    font-family: Klee, Times, serif;
 }
 
 header h2{
+    margin-left:40%  ;
+    margin-top: 0%;
+    font-size: 200%;
     color:black;
-    text-align: center;
+    text-align:center;
     letter-spacing:0.1em;
     font-family: "Cambria Math", Times, serif;
 
 }
+
+/*search css*/
 #search{
     text-align: center;
-    padding-top: 50px;
+    padding-top: 30px;
+    font-size: 20px;
 }
 
 input[type=text] {
@@ -39,7 +50,7 @@ input[type=text] {
     background-image: url('search_icon.png');
     background-position: 10px 10px;
     background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
+    padding: 12px 10px 12px 40px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
 }
@@ -48,12 +59,66 @@ input[type=text]:focus {
     width: 91%;
 }
 
+/*The css for bottom part of singin, singup and about us*/
 
 #underSearch{
     text-align: center;
-    padding-top: 50px;
+    padding-top: 10px;
 }
 
 li{
     display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#signIn{
+    padding-left: 10%;
+    margin-left: 30px;
+    font-size: 30px;
+}
+
+#email{
+
+}
+
+
+
+#password{
+    text-align: center;
+    margin-bottom: 30px;
+    padding-left: 32px;
+}
+
+#submit{
+    padding-left: 12%;
+}
+input[type=email] {
+    height: 60px;
+    width: 280px;
+    box-sizing: border-box;
+    border: 2px solid #24cdd4;
+    border-radius: 12px;
+    font-size: 18px;
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 12px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+.button{
+    color:white;
+}
+input[type=submit] {
+    background-color:darksalmon  ;
+    width:200px;
+    height: 60px;
+    border:4px;
+    border-radius: 20px;
+    font-size: 24px;
+}
+
+#singUp, #about, #singUpResturant{
+    padding-left: 12%;
 }
