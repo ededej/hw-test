@@ -12,26 +12,41 @@
     <img src="plate-004.jpg" width="150" height="150" alt="Ermal Dedej photo"
          style="float:left">
     <h1> Pranzo </h1>
-    <h2>A better lunch hour</h2>
+    <h2 >A better lunch hour</h2>
     </header>
-    <h2><b>Join PRANZO</b></h2>
-    <p>
-    	<input type="text" maxlength="20" placeholder="First Name"/></p>
-	<p>
-		<input type="text" maxlength="20" placeholder="Last Name"/></p>
-	<p>
+    <h2 align="center"><b>Let's Join PRANZO!!!</b></h2>
+    <div id="FirstName">
+    	<p>
+    		<input type="text" maxlength="20" placeholder="First Name"/></p>
+    </div>
+    <div id="LastName">
+		<p>
+			<input type="text" maxlength="20" placeholder="Last Name"/></p>
+	</div>
+	<div id="Gender">
+		<li>
 		<input type="radio" name="gender" value="male"> Male<br>
   		<input type="radio" name="gender" value="female"> Female<br>
-  		<input type="radio" name="gender" value="other"> Other<br></p>
-	<p>
-		E-mail: <input type="email" name="UserEmail"/></p>
-	<p>
-		Re-enter E-mail: <input type="email" name="UserEmail"/></p>
-	<p>
-		Password: <input type="password" minlength="8" maxlength="16" placeholder="length between 8-16" name="pwd"/></p>
-	<p>
-		Re-enter Password: <input type="password" minlength="8" maxlength="16" placeholder="length between 8-16" name="pwd"/></p>
-	<fieldset>
+  		<input type="radio" name="gender" value="other"> Other<br></li>
+	</div>
+	
+	<div id="Email">
+		<li>
+		E-mail: <input type="email" name="UserEmail"/></li>
+		<li>
+		Re-enter E-mail: <input type="email" name="UserEmail"/></li>
+	</div>
+	
+	<div id="Password">
+		<li>
+		Password: <input type="password" minlength="8" maxlength="16" placeholder="length between 8-16" name="pwd"/></li>
+	
+		<li>
+		Re-enter Password: <input type="password" minlength="8" maxlength="16" placeholder="length between 8-16" name="pwd"/></li>
+	</div>
+	
+	<div id="Address">
+		<fieldset>
 		<legend>Address</legend>
 		<p>Street: <input type="text" name="street"/></p>
 		<p>City: <input type="text" name="city"/></p>
@@ -90,6 +105,15 @@
 		</select></p>
 		<p>Zip: <input type="text" name="zip" maxlength="5"/> </p>
 	</fieldset>
-	<p>Expected Cost: 0<input type="range" min="0" max"100" step="1" value="15"/>100</p>
-	<p><button>Sign Me Up!</button></p>
+
+	</div>
+
+	<div id="Range">
+		<p>Expected Cost: 0<input type="range" min="0" max"100" step="1" value="15"/>100</p>
+	</div>
+	
+	<div id="SignUpButton">
+		<button class="button">Sign Me Up!</button>
+	</div>
+	
 </body>

@@ -30,3 +30,128 @@ header h2{
     font-family: "Cambria Math", Times, serif;
 
 }
+
+#FirstName{
+    text-align: center;
+    padding-top: 0px;
+    font-size: 15px;
+}
+
+#LastName{
+    text-align: center;
+    padding-top: 0px;
+    font-size: 15px;
+}
+
+input[type=text] {
+    height: 30px;
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    font-size: 15px;
+    text-align: center;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+#Gender{
+    text-align: center;
+    padding-top: 0px;
+    font-size: 15px;
+}
+
+#Email{
+    text-align: center;
+    font-size: 15px;
+}
+
+input[type=email] {
+    height: 30px;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #24cdd4;
+    border-radius: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+li{
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#Password{
+    text-align: center;
+    font-size: 15px;
+}
+
+input[type=Password] {
+    height: 30px;
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid #34cd31;
+    border-radius: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+#Address{
+    text-align: center;
+    font-size: 15px;
+}
+fieldset { 
+    display: block;
+    margin-left: 400px;
+    margin-right: 400px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 5px groove;
+}
+
+#Range{
+    text-align: center;
+    font-size: 15px;
+}
+
+#SignUpButton{
+    text-align: center;
+}
+.button {
+    position: relative;
+    background-color: darksalmon;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    border-radius: 40px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
