@@ -3,18 +3,47 @@ body{
     background-color:whitesmoke;
     font-family: Helvetica, Arial, sans-serif;
 }
+/*Making the website responsive to different resulutions*/
+@media (max-width: 200px) {
+    html { font-size: 2%; }
+}
+@media (min-width: 300px) {
+    html { font-size: 70%; }
+}
 
+@media (min-width: 360px) {
+    html { font-size: 95%; }
+}
+
+@media (min-width: 500px) {
+    html { font-size: 135%; }
+}
+
+@media (min-width: 700px) {
+    html { font-size: 160%; }
+}
+
+@media (min-width: 1000px) {
+    html { font-size: 180%; }
+}
+
+@media (min-width: 1500px) {
+    html { font-size: 225%; }
+}
 /*header css*/
 header{
     background-color:darksalmon;
     height: 150px;
-
+    margin-bottom: 10px;
+    position: relative;
+    min-width: 50%;
+    max-width: 100%;
 }
 
 header h1{
     margin:1% 2% 0% 20%  ;
     color:black;
-    font-size: 460%;
+    font-size:1.8em;
     text-transform:uppercase;
     text-align: center;
     letter-spacing:0.5em;
@@ -24,7 +53,7 @@ header h1{
 header h2{
     margin-left:40%  ;
     margin-top: 0%;
-    font-size: 200%;
+    font-size: 1.4em;
     color:black;
     text-align:center;
     letter-spacing:0.1em;
@@ -34,18 +63,20 @@ header h2{
 
 /*search css*/
 #search{
+    align-items: baseline;
+    margin-top: 10px;
     text-align: center;
     padding-top: 30px;
-    font-size: 20px;
+    font-size: 1.1em;
 }
 
 input[type=text] {
-    height: 60px;
+    height: 55px;
     width: 210px;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 12px;
-    font-size: 16px;
+    font-size: .5em;
     background-color: white;
     background-image: url('search_icon.png');
     background-position: 10px 10px;
@@ -59,54 +90,62 @@ input[type=text]:focus {
     width: 91%;
 }
 
-/*The css for bottom part of singin, singup and about us*/
-
-#underSearch{
-    text-align: center;
-    padding-top: 10px;
+/*Sign in CSS*/
+form {
+    /* Just to center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* To see the outline of the form */
+    padding: 1em;
 }
-
-li{
-    display: block;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
+/*Need to be alinging the text*/
 #signIn{
-    padding-left: 10%;
-    margin-left: 30px;
-    font-size: 30px;
-}
-
-#email{
-
-}
-
-
-
-#password{
+    align-content: center;
     text-align: center;
-    margin-bottom: 30px;
-    padding-left: 32px;
+    /*padding-top: 10px;*/
+    /*margin-left: 30px;*/
+    font-size: 1em;
+    display: block;
+
 }
 
-#submit{
-    padding-left: 12%;
+#signIn  label {
+    width: 90px;
+    padding-bottom: 10px;
+    display: inline-table ;
+    text-align:left;
+    margin-bottom: 20px;
+    font-size: 0.7em;
 }
+
+
 input[type=email] {
-    height: 60px;
-    width: 280px;
+    height: 45px;
+    width: 250px;
     box-sizing: border-box;
     border: 2px solid #24cdd4;
     border-radius: 12px;
-    font-size: 18px;
+    font-size: 0.7em;
     background-color: white;
     background-position: 10px 10px;
     background-repeat: no-repeat;
     padding: 12px 20px 12px 12px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
+
 }
+input[type=password] {
+    height: 45px;
+    width: 250px;
+    box-sizing: border-box;
+    border: 2px solid #24cdd4;
+    border-radius: 12px;
+    font-size: 0.7em;
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 12px;
+
+}
+
 .button{
     color:white;
 }
@@ -116,9 +155,18 @@ input[type=submit] {
     height: 60px;
     border:4px;
     border-radius: 20px;
-    font-size: 24px;
+    font-size: 1em;
 }
 
-#singUp, #about, #singUpResturant{
-    padding-left: 12%;
+/*The last part of CSS*/
+#underSearch{
+    align-content: center;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+li{
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
 }

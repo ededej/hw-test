@@ -8,112 +8,117 @@
 </head>
 <body>
 <!-- The header of lunch website called Pranzo-->
-    <header>
+<header>
     <img src="plate-004.jpg" width="150" height="150" alt="Ermal Dedej photo"
          style="float:left">
     <h1> Pranzo </h1>
-    <h2 >A better lunch hour</h2>
-    </header>
-    <h2 align="center"><b>Let's Join PRANZO!!!</b></h2>
-    <div id="FirstName">
-    	<p>
-    		<input type="text" maxlength="20" placeholder="First Name"/></p>
+    <h2>A better lunch hour</h2>
+</header>
+
+
+<h2><b>Join Pranzo</b></h2>
+    <form>
+
+    <p><input type="name" maxlength="20" placeholder="First Name"/></p>
+
+    <p><input type="name" maxlength="20" placeholder="Last Name"/></p>
+
+    <div id="sex">
+        <p> Gender</p>
+        <label><input type="radio" name="gender" value="male"> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+        <label><input type="radio" name="gender" value="other"> Other</label>
     </div>
-    <div id="LastName">
-		<p>
-			<input type="text" maxlength="20" placeholder="Last Name"/></p>
-	</div>
-	<div id="Gender">
-		<li>
-		<input type="radio" name="gender" value="male"> Male<br>
-  		<input type="radio" name="gender" value="female"> Female<br>
-  		<input type="radio" name="gender" value="other"> Other<br></li>
-	</div>
-	
-	<div id="Email">
-		<li>
-		E-mail* : <input type="email" name="UserEmail"/></li>
-		<li>
-		Re-enter E-mail* : <input type="email" name="UserEmail"/></li>
-	</div>
-	
-	<div id="Password">
-		<li>
-		Password* : <input type="password" minlength="8" maxlength="16" placeholder="length between 8-16" name="pwd"/></li>
-	
-		<li>
-		Re-enter Password* : <input type="password" minlength="8" maxlength="16" placeholder="length between 8-16" name="pwd"/></li>
-	</div>
-	
-	<div id="Address">
-		<fieldset>
-		<legend>Address</legend>
-		<p>Street: <input type="text" name="street"/></p>
-		<p>City: <input type="text" name="city"/></p>
-		<p>State: <select>
-			<option value="AL">Alabama</option>
-			<option value="AK">Alaska</option>
-			<option value="AZ">Arizona</option>
-			<option value="AR">Arkansas</option>
-			<option value="CA">California</option>
-			<option value="CO">Colorado</option>
-			<option value="CT">Connecticut</option>
-			<option value="DE">Delaware</option>
-			<option value="DC">District Of Columbia</option>
-			<option value="FL">Florida</option>
-			<option value="GA">Georgia</option>
-			<option value="HI">Hawaii</option>
-			<option value="ID">Idaho</option>
-			<option value="IL">Illinois</option>
-			<option value="IN">Indiana</option>
-			<option value="IA">Iowa</option>
-			<option value="KS">Kansas</option>
-			<option value="KY">Kentucky</option>
-			<option value="LA">Louisiana</option>
-			<option value="ME">Maine</option>
-			<option value="MD">Maryland</option>
-			<option value="MA">Massachusetts</option>
-			<option value="MI">Michigan</option>
-			<option value="MN">Minnesota</option>
-			<option value="MS">Mississippi</option>
-			<option value="MO">Missouri</option>
-			<option value="MT">Montana</option>
-			<option value="NE">Nebraska</option>
-			<option value="NV">Nevada</option>
-			<option value="NH">New Hampshire</option>
-			<option value="NJ">New Jersey</option>
-			<option value="NM">New Mexico</option>
-			<option value="NY">New York</option>
-			<option value="NC">North Carolina</option>
-			<option value="ND">North Dakota</option>
-			<option value="OH">Ohio</option>
-			<option value="OK">Oklahoma</option>
-			<option value="OR">Oregon</option>
-			<option value="PA">Pennsylvania</option>
-			<option value="RI">Rhode Island</option>
-			<option value="SC">South Carolina</option>
-			<option value="SD">South Dakota</option>
-			<option value="TN">Tennessee</option>
-			<option value="TX">Texas</option>
-			<option value="UT">Utah</option>
-			<option value="VT">Vermont</option>
-			<option value="VA">Virginia</option>
-			<option value="WA">Washington</option>
-			<option value="WV">West Virginia</option>
-			<option value="WI">Wisconsin</option>
-			<option value="WY">Wyoming</option>
-		</select></p>
-		<p>Zip* : <input type="text" name="zip" pattern= "^[0-9]{5}(?:-[0-9]{4})?$" maxlength="5" required/> </p>
-	</fieldset>
 
-	</div>
+    <div id="diet">
+        <p> Diet</p>
+        <label><input type="radio" name="foodOption1" value="veggie"> Vegetarian</label>
+        <label><input type="radio" name="foodOption2" value="vegan"> Vegan</label>
+        <label><input type="radio" name="foodOption3" value="glFree"> Glutten Free</label>
+        <label><input type="radio" name="foodOption4" value="other"> I eat everything</label>
 
-	<div id="Range">
-		<p>Expected Cost: 0<input type="range" min="0" max"100" step="1" value="15"/>100</p>
-	</div>
-	
-	<div id="SignUpButton">
-		<button class="button">Sign Me Up!</button>
-	</div>
-	<li><center><b></br>* is Required</b></center></li>
+    </div>
+    <div id="emailPass">
+        <p >Email <input type = "email" placeholder="Insert email"/></p>
+
+        <p >Re-enter E-mail <input type = "email" placeholder="Insert email"/></p>
+
+        <p>Password: <input type="password" minlength="8" maxlength="16" placeholder="length between 8-16" name="pwd"/></p>
+        <p>Re-enter Password: <input type="password" minlength="8" maxlength="16" placeholder="length between 8-16" name="pwd"/></p>
+    </div>
+
+    <fieldset>
+
+        <legend>Address</legend>
+
+        <p>Street: <input type="address" name="street"/></p>
+
+        <p>City: <input type="address" name="city"/></p>
+
+        <p>State:
+            <select>
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+            <option value="CA">California</option>
+            <option value="CO">Colorado</option>
+            <option value="CT">Connecticut</option>
+            <option value="DE">Delaware</option>
+            <option value="DC">District Of Columbia</option>
+            <option value="FL">Florida</option>
+            <option value="GA">Georgia</option>
+            <option value="HI">Hawaii</option>
+            <option value="ID">Idaho</option>
+            <option value="IL">Illinois</option>
+            <option value="IN">Indiana</option>
+            <option value="IA">Iowa</option>
+            <option value="KS">Kansas</option>
+            <option value="KY">Kentucky</option>
+            <option value="LA">Louisiana</option>
+            <option value="ME">Maine</option>
+            <option value="MD">Maryland</option>
+            <option value="MA">Massachusetts</option>
+            <option value="MI">Michigan</option>
+            <option value="MN">Minnesota</option>
+            <option value="MS">Mississippi</option>
+            <option value="MO">Missouri</option>
+            <option value="MT">Montana</option>
+            <option value="NE">Nebraska</option>
+            <option value="NV">Nevada</option>
+            <option value="NH">New Hampshire</option>
+            <option value="NJ">New Jersey</option>
+            <option value="NM">New Mexico</option>
+            <option value="NY">New York</option>
+            <option value="NC">North Carolina</option>
+            <option value="ND">North Dakota</option>
+            <option value="OH">Ohio</option>
+            <option value="OK">Oklahoma</option>
+            <option value="OR">Oregon</option>
+            <option value="PA">Pennsylvania</option>
+            <option value="RI">Rhode Island</option>
+            <option value="SC">South Carolina</option>
+            <option value="SD">South Dakota</option>
+            <option value="TN">Tennessee</option>
+            <option value="TX">Texas</option>
+            <option value="UT">Utah</option>
+            <option value="VT">Vermont</option>
+            <option value="VA">Virginia</option>
+            <option value="WA">Washington</option>
+            <option value="WV">West Virginia</option>
+            <option value="WI">Wisconsin</option>
+            <option value="WY">Wyoming</option>
+            </select></p>
+
+        <p>Zip: <input type="address" name="zip" maxlength="5"/> </p>
+    </fieldset>
+
+    <p>Expected Cost:
+        <input type="range" name="amountRange" min="0" max="100"  step="1" value="15" oninput="this.form.amountInput.value=this.value" />
+        <input type="number" name="amountInput"   min="0" max="100"/> (Max Value 100)</p>
+
+    <p><button>Sign Me Up!</button></p>
+
+    </form>
+
 </body>

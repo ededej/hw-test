@@ -1,0 +1,66 @@
+/*Body css*/
+body{
+    background-color:whitesmoke;
+    font-family: Helvetica, Arial, sans-serif;
+}
+/*Making the website responsive to different resulutions*/
+@media (max-width: 200px) {
+    html { font-size: 2%; }
+}
+@media (min-width: 300px) {
+    html { font-size: 70%; }
+}
+
+@media (min-width: 360px) {
+    html { font-size: 95%; }
+}
+
+@media (min-width: 500px) {
+    html { font-size: 135%; }
+}
+
+@media (min-width: 700px) {
+    html { font-size: 160%; }
+}
+
+@media (min-width: 1000px) {
+    html { font-size: 180%; }
+}
+
+@media (min-width: 1500px) {
+    html { font-size: 225%; }
+}
+/*header css*/
+header{
+    background-color:darksalmon;
+    height: 150px;
+    margin-bottom: 10px;
+    position: relative;
+    min-width: 50%;
+    max-width: 100%;
+}
+
+header h1{
+    margin:1% 2% 0% 20%  ;
+    color:black;
+    font-size:1.8em;
+    text-transform:uppercase;
+    text-align: center;
+    letter-spacing:0.5em;
+    font-family: Klee, Times, serif;
+}
+
+header h2{
+    margin-left:40%  ;
+    margin-top: 0%;
+    font-size: 1.4em;
+    color:black;
+    text-align:center;
+    letter-spacing:0.1em;
+    font-family: "Cambria Math", Times, serif;
+
+}
+
+#menu ul {
+    display:inline;
+}
