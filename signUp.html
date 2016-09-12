@@ -32,17 +32,17 @@
 	
 	<div id="Email">
 		<li>
-		E-mail: <input type="email" name="UserEmail"/></li>
+		E-mail* : <input type="email" name="UserEmail"/></li>
 		<li>
-		Re-enter E-mail: <input type="email" name="UserEmail"/></li>
+		Re-enter E-mail* : <input type="email" name="UserEmail"/></li>
 	</div>
 	
 	<div id="Password">
 		<li>
-		Password: <input type="password" minlength="8" maxlength="16" placeholder="length between 8-16" name="pwd"/></li>
+		Password* : <input type="password" minlength="8" maxlength="16" placeholder="length between 8-16" name="pwd"/></li>
 	
 		<li>
-		Re-enter Password: <input type="password" minlength="8" maxlength="16" placeholder="length between 8-16" name="pwd"/></li>
+		Re-enter Password* : <input type="password" minlength="8" maxlength="16" placeholder="length between 8-16" name="pwd"/></li>
 	</div>
 	
 	<div id="Address">
@@ -103,7 +103,7 @@
 			<option value="WI">Wisconsin</option>
 			<option value="WY">Wyoming</option>
 		</select></p>
-		<p>Zip: <input type="text" name="zip" maxlength="5"/> </p>
+		<p>Zip* : <input type="text" name="zip" pattern= "^[0-9]{5}(?:-[0-9]{4})?$" maxlength="5" required/> </p>
 	</fieldset>
 
 	</div>
@@ -115,5 +115,5 @@
 	<div id="SignUpButton">
 		<button class="button">Sign Me Up!</button>
 	</div>
-	
+	<li><center><b></br>* is Required</b></center></li>
 </body>
