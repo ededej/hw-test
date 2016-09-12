@@ -75,8 +75,8 @@ input[type=radio]{
     border-radius: 30px;
 }
 
-input:invalid{
-    background-color: #ff6666;
+input[type=checkbox]{
+    border-radius: 40px;
 }
 
 input[type=name] {
