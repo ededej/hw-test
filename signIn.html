@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Pranzo - Singed In</title>
-    <link type="text/css" rel="stylesheet" href="main.css">
+    <link type="text/css" rel="stylesheet" href="signIn.css">
 
 </head>
 <body>
@@ -14,19 +14,75 @@
         <h1> Pranzo </h1>
         <h2>A better lunch hour</h2>
     </header>
+
     <div id="menu">
-        <div id="helloMsg">
-            <p>Welcome, Sarah</p>
-        </div>
 
         <ul>
-            <li id=favorite"> <p> Your favorite places</p></li>
-            <li id="suggestion"><p> In this location we suggest</p></li>
-            <li id ="about">About Us</li>
-            <li id="contactUs">Contact Us</li>
+            <li><a class="target" href="#favRes"> Favorite places</a></li>
+            <li><a class="target"  href="#sugg"> Our Suggestions</a></li>
+            <li><a class="target" href="#contact">Contact Us</a></li>
         </ul>
     </div>
+<!--Welcome message to the user-->
+    <div id="helloMsg">
+        <h3>Welcome, Sarah</h3>
+    </div>
 
+    <div class="myTable" id="favRes">
+        <h4> Your favorite places to eat</h4>
+        <table>
+            <tr>
+                 <th>Restaurant</th>
+                 <th>Type of Food</th>
+                  <th>Location</th>
+                  </tr>
+            <tr>
+                <td>Faccia Luna</td>
+                <td>Italian</td>
+                <td>Arlington, VA</td>
+            </tr>
+            <tr>
+                <td>Cactus Cantina</td>
+                <td>Mexican</td>
+                <td>Washington, DC</td>
+            </tr>
+            <tr>
+                <td>Barcelona</td>
+                <td>Spanish</td>
+                <td>Washington, DC</td>
+            </tr>
+        </table>
+    </div>
+    <div class="myTable" id="sugg">
+        <h4> Our suggestion for you today</h4>
 
+        <table>
+            <tr>
+                <th>Restaurant</th>
+                <th>Type of Food</th>
+                <th>Location</th>
+            </tr>
+            <tr>
+                <td>Red Hen</td>
+                <td>Italian</td>
+                <td>Washington, DC</td>
+            </tr>
+            <tr>
+                <td>Diplomat</td>
+                <td>French</td>
+                <td>Washington, DC</td>
+            </tr>
+            <tr>
+                <td>Texas Jack</td>
+                <td>American BBQ</td>
+                <td>Arlington, VA</td>
+            </tr>
+        </table>
+    </div>
+
+    <!--Here I need to put some box transformation-->
+    <footer>
+    <div class="box" id="contact"> Contact US </div>
+    </footer>
 </body>
 </html>
