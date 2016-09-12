@@ -39,15 +39,16 @@
 
     </div>
     <div id="emailPass">
-        <p >Email <input type = "email" placeholder="Insert email"/></p>
+        <p >Email*: <input type = "email" placeholder="Insert email"required/></p>
 
-        <p >Re-enter E-mail <input type = "email" placeholder="Insert email"/></p>
+        <p >Re-enter E-mail*: <input type = "email" placeholder="Insert email"required/></p>
 
-        <p>Password: <input type="password" minlength="8" maxlength="16" placeholder="length between 8-16" name="pwd"/></p>
-        <p>Re-enter Password: <input type="password" minlength="8" maxlength="16" placeholder="length between 8-16" name="pwd"/></p>
+        <p>Password*: <input type="password" minlength="8" maxlength="16" placeholder="length between 8-16" name="pwd" required/></p>
+        <p>Re-enter Password*: <input type="password" minlength="8" maxlength="16" placeholder="length between 8-16" name="pwd" required/></p>
     </div>
 
-    <fieldset>
+    <div id="Address">
+        <fieldset>
 
         <legend>Address</legend>
 
@@ -110,14 +111,17 @@
             <option value="WY">Wyoming</option>
             </select></p>
 
-        <p>Zip: <input type="address" name="zip" maxlength="5"/> </p>
-    </fieldset>
-
+        <p>Zip* : <input type="address" name="zip" pattern= "^[0-9]{5}(?:-[0-9]{4})?$" maxlength="5" required/> </p>
+        </fieldset>
+    </div>
     <p>Expected Cost:
         <input type="range" name="amountRange" min="0" max="100"  step="1" value="15" oninput="this.form.amountInput.value=this.value" />
         <input type="number" name="amountInput"   min="0" max="100"/> (Max Value 100)</p>
 
-    <p><button>Sign Me Up!</button></p>
+    <div id="SignUpButton">
+        <button class="button">Sign Me Up!</button>
+    </div>
+    <p><left><b></br>* is Required</b></left></p>
 
     </form>
 

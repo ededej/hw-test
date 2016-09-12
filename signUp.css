@@ -66,6 +66,19 @@ form{
     display: inline;
 
 }
+
+input:focus{
+    outline: none;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+}
+input[type=radio]{
+    border-radius: 30px;
+}
+
+input:invalid{
+    background-color: #ff6666;
+}
+
 input[type=name] {
     height: 30px;
     width: 280px;
@@ -73,7 +86,7 @@ input[type=name] {
     border: 2px solid #24cdd4;
     border-radius: 12px;
     font-size: 0.7em;
-    background-color: white;
+    /*background-color: white;*/
     background-position: 10px 10px;
     background-repeat: no-repeat;
     padding: 12px 20px 12px 12px;
@@ -109,6 +122,7 @@ input[type=password] {
 
 }
 input[type=address] {
+
     height: 30px;
     width: 280px;
     box-sizing: border-box;
@@ -119,7 +133,16 @@ input[type=address] {
     background-position: 10px 10px;
     background-repeat: no-repeat;
     padding: 12px 20px 12px 12px;
+}
 
+fieldset { 
+    display: block;
+    margin-right: 900px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 5px groove;
 }
 
 #radio label {
@@ -139,15 +162,16 @@ input[type=range] {
 
 }
 
-button {
+.button {
     background-color:darksalmon  ;
     color:white;
     width:200px;
     height: 60px;
-    border:4px;
+    border:center;
     border-radius: 20px;
     font-size: 1em;
 }
-
-
-
+.button:hover {
+    background-color: lightgreen;
+    transition: all 0.4s;
+}
