@@ -1,26 +1,44 @@
+/*This is the main css where most of the CSS body and header will be devopled and other pages
+will inheret most of this styles*/
 /*Body css*/
 body{
     background-color:whitesmoke;
     font-family: Helvetica, Arial, sans-serif;
 }
+
 /*Making the website responsive to different resulutions*/
 @media (max-width: 200px) {
-    html { font-size: 2%; }
+    html
+    {   font-size: 2%;
+        overflow: scroll;
+    }
 }
 @media (min-width: 300px) {
-    html { font-size: 70%; }
+    html {
+        font-size: 70%;
+        overflow: scroll;
+    }
 }
 
 @media (min-width: 360px) {
-    html { font-size: 95%; }
+    html {
+        font-size: 95%;
+        overflow: scroll;
+    }
 }
 
 @media (min-width: 500px) {
-    html { font-size: 135%; }
+    html {
+        font-size: 135%;
+        overflow: scroll;
+    }
 }
 
 @media (min-width: 700px) {
-    html { font-size: 160%; }
+    html {
+        font-size: 160%;
+        overflow: scroll;
+    }
 }
 
 @media (min-width: 1000px) {
@@ -30,7 +48,8 @@ body{
 @media (min-width: 1500px) {
     html { font-size: 225%; }
 }
-/*header css*/
+
+/*header css which include the logo and banner*/
 header{
     background-color:darksalmon;
     height: 150px;
@@ -86,8 +105,10 @@ input[type=text] {
     transition: width 0.4s ease-in-out;
 }
 
+/*making the search box to be larger when focus on it*/
 input[type=text]:focus {
     width: 91%;
+    height: 65px;
 }
 
 /*Sign in CSS*/
@@ -98,17 +119,17 @@ form {
     /* To see the outline of the form */
     padding: 1em;
 }
-/*Need to be alinging the text*/
+
+/*The siging it will aling in center*/
 #signIn{
     align-content: center;
     text-align: center;
-    /*padding-top: 10px;*/
-    /*margin-left: 30px;*/
     font-size: 1em;
     display: block;
 
 }
 
+/*I have costumize the lable of the sing in to be centered */
 #signIn  label {
     width: 90px;
     padding-bottom: 10px;
@@ -118,7 +139,7 @@ form {
     font-size: 0.7em;
 }
 
-
+/*The css for the input box for sing in */
 input[type=email] {
     height: 45px;
     width: 250px;
@@ -146,6 +167,7 @@ input[type=password] {
 
 }
 
+/*The button that submitts sing in information*/
 .button{
     color:white;
 }
@@ -158,15 +180,15 @@ input[type=submit] {
     font-size: 1em;
 }
 
-/*The last part of CSS*/
+/*The last part of CSS where I have the list of links*/
 #underSearch{
     align-content: center;
     text-align: center;
     font-size: 0.8em;
 }
 
-li{
+#underSearch li{
     display: block;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1em;
 }

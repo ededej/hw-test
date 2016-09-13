@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!--This is our homepage. Pranzo is a simple website that finds people their favorite lunch
+The first thing users see on our website is the search box to start searching for their lunch. Other than searching
+for lunch, user will be able to sign in so they can save their favorite places and check the suggestion that Pranzo
+makes for lunch. To sing in user need to sing up once to the website. Links for that are located under singin button.
+Also, resturant will be able to sing in and updates their menus at any time so they have separate way to sign in.
+The idea is to keep it simple so every user will be able to start using without to much troubles.
+-->
+
 <head>
     <meta charset="UTF-8">
     <title>Pranzo</title>
@@ -9,29 +18,30 @@
 <body>
 <!-- The header of lunch website called Pranzo-->
     <header>
-        <img src="plate-004.jpg" width="150" height="150" alt="Ermal Dedej photo"
-             style="float:left">
+        <a href="index.html"><img src="plate-004.jpg" width="150" height="150" alt="Ermal Dedej photo"
+             style="float:left"></a>
         <h1> Pranzo </h1>
         <h2>A better lunch hour</h2>
     </header>
 
 
-<!--Here I need the search bottom-->
+<!--Here is the search bottom-->
     <div id="search">
-       <label for="search">Find Lunch : <input type="text" name="search" placeholder="Zipcode or adreess"> </label>
+       <label>Find Lunch : <input type="text" name="search" placeholder="Zipcode or adreess"> </label>
     </div>
 
-<!--Here I will put the Sing in or -->
+<!-- The singIn section -->
     <div id="signIn">
         <form action="signIn.html">
         <p> Sign in</p>
-        <label for="email">Email Address <input type = "email" placeholder="Insert email"/></label>
-        <label for="password">Password <input type = "password" minlength="6" placeholder="More than six characters"/></label>
+        <label >Email Address <input type = "email" placeholder="Insert email"/></label>
+        <label >Password <input type = "password" minlength="6" placeholder="More than six characters"/></label>
             <input type="submit" class="button">
         </form>
         </div>
 
-<!-- This is going to the last part with sign up, sign up resturant, about us, contatct us-->
+<!-- This is last part with sign up, sign up resturant, about us, contatct us-->
+<!--I used a list to list them at the end-->
     <div id="underSearch">
         <ul>
             <li id="singUp" ><a href="signUp.html">Sign up for free </a></li>
@@ -42,4 +52,6 @@
     </div>
 
 </body>
+<!--end body-->
 </html>
+<!--end html-->
